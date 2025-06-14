@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1> Movies below eventually ... </h1>
+    <br>
+    <h3>Inventory:</h3>
+        {% for movie in movies %}
+            <h4>{{ movie.title }}</h4>
+            <p>
+                Rating: {{ movie.rating }}<br>
+                Description : {{ movie.description }}
+            </p>
+        {% endfor %}
+</body>
+</html>
